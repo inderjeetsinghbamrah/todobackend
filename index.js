@@ -5,7 +5,7 @@ const cors = require("cors");
 const { createTodo, updateTodo } = require("./types");
 const { todo } = require("./db");
 
-require("dotenv").config();
+const PORT = process.env.PORT;
 
 const app = express();
 
