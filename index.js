@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://fantastic-crumble-d100a5.netlify.app/" }));
 
 app.post("/todo", async (req, res) => {
   const title = req.body.title;
